@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+---
+
+<Layout
+    title="Cybernetic | Homepage"
+    description="YOUR META DESCRIPTION FOR SEO"
+>
+    <main class="page-content">
+        <Hero
+            heroType="ParallaxImage"
+            client:visible
+            data={{
+                image: HeroSlider3.src,
+                content: {
+                    title: "INFINITE",
+                    paragraph:
+                        "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
+                },
+            }}
+        />
+        <ServiceCards
+            description="SERVICES"
+            title="The Service We Provide For You"
+            client:visible
+            cards={[
+                {
+                    title: "Cyber - development",
+                    description:
+                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                },
+                {
+                    title: "Cyber - Security",
+                    description:
+                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                },
+                {
+                    title: "Cyber - Marketing",
+                    description:
+                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                },
+                {
+                    title: "Cyber - Development",
+                    description:
+                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                },
+                {
+                    title: "Cyber - Security",
+                    description:
+                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                },
+                {
+                    title: "Cyber - Marketing",
+                    description:
+                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                },
+            ]}
+        />
+
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                image: {
+                    src: InfiniteImg1.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                },
+                title: "Lets make you Infinite!",
+                paragraph:
+                    "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                switchPlaces: true,
+                image: {
+                    src: InfiniteImg2.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                },
+                title: "Infinite Community",
+                paragraph:
+                    "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+            }}
+        />
+    </main>
+    <Footer />
+</Layout>
