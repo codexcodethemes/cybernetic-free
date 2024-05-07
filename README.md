@@ -1,9 +1,9 @@
 # 🚀Cybernetic Template - Astro + React
 
 ![Cybernetic Template](/src/static/images/preview.webp)
-[<img src="/src/static/images/link-pro.png">](https://www.codexcode.store/products/cybernetic-website-template)
+[<img src="/src/static/images/link-pro.png">](https://codexcode.store/themes/cybernetic-website-template)
 [<img src="/src/static/images/link-live.png">](https://cybernetic-astro.netlify.app/)
-[<img src="/src/static/images/link-contact.png">](https://www.codexcode.store/pages/contact)
+[<img src="/src/static/images/link-contact.png">](https://codexcode.store/contact)
 
 ## ⚠️ How to keep good performance?
 
@@ -100,8 +100,8 @@ All colors are used as css var to have easier access in app
 ## 📞🧞 Contact & Support
 
 If you bought our paid theme, you get 100% our support!
-have any problems or questions, please let us know here: [Contact Form](https://www.codexcode.store/pages/contact)
+have any problems or questions, please let us know here: [Contact Form](https://codexcode.store/contact)
 
 ## 🧞 Authors
 
--   [@codexcode](https://www.codexcode.pl)
+-   [@codexcode](https://codexcode.store)

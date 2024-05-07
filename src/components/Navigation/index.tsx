@@ -15,7 +15,7 @@ export const Navigation: FC = () => {
                     </li>
                     <li>
                         <a
-                            href="https://www.codexcode.store/products/cybernetic-website-template"
+                            href="https://codexcode.store/themes/cybernetic-website-template"
                             target="_blank"
                         >
                             Pro version
