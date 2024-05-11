@@ -5,9 +5,6 @@ import { PreviewPng } from "@static/images";
 import { Header } from "@modules/Header";
 import MetaConfig from "./MetaConfig.astro";
 
-// tailwind-output uncomment if you need to use tailwind
-// import TailwindOutput from "../styles/tailwind/tailwind.output.css";
-
 interface Props {
     title: string;
     description: string;
@@ -28,8 +25,6 @@ const { title, description, overwritePreview } = Astro.props;
         <title>{title}</title>
         <Global styles={NormalizeCSS} />
 
-        <!-- tailwind-output - delete line above & uncomment this one if you need to use tailwind-->
-        <!-- <Global styles={{ NormalizeCSS, TailwindOutput }} /> -->
         <script>
             /**
              * Add class to transition "overflow element" on page load to make it prettier

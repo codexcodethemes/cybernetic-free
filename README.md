@@ -102,20 +102,6 @@ MediaQuery can be used with MIN & MAX OR BETWEEN - that means code will display 
 
 All colors are used as css var to have easier access in app
 
-## ⚠️ Tailwind
-
-This project have basic setup with Tailwind - if you like to use it, you can^^
-
-search for ⚠️ tailwind-output ⚠️ & un-comment those lines & add config in tailwind.config.js
-
-if you need to generate again file use this:
-
-```
-npx tailwindcss -i ./src/styles/tailwind/tailwind.css -o ./src/styles/tailwind/tailwind.output.css --watch
-```
-
-delete --watch if you dont need to watch you'r css files all time
-
 ## 🧞 Commands
 
 #### All commands are run from the root of the project, from a terminal:
