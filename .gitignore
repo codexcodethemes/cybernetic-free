@@ -4,6 +4,8 @@ dist/
 # generated types
 .astro/
 
+yarn.lock
+package-lock.json
 # dependencies
 node_modules/
 

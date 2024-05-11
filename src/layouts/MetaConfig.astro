@@ -1,0 +1,74 @@
+---
+import { siteUrl } from "../../astro.config.mjs";
+
+interface Props {
+    title: string;
+    description: string;
+    preview: string;
+}
+
+const { title, description, preview } = Astro.props;
+
+/**
+ * keep whole metadata in one place
+ */
+const metaData = {
+    keywords:
+        "astro.build, astro, static site, react, webiste templates, website creation, react templates, next.js templates, astro templates, custom website, custom website templates",
+    default: {
+        url: siteUrl,
+        type: "website",
+        title: title,
+        description: description,
+        image: preview,
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: title,
+        description: description,
+        image: preview,
+        domain: siteUrl,
+        url: siteUrl,
+    },
+};
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- icons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="48x48" href="/favicon.ico" />
+
+<!-- Other meta important things -->
+<meta name="generator" content={Astro.generator} />
+<meta name="description" content={description} />
+<meta name="color-scheme" content="light only" />
+<meta name="keywords" content={metaData.keywords} />
+
+<meta
+    name="robots"
+    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+/>
+
+<!-- default ones -->
+<meta property="url" content={metaData.default.url} />
+<meta property="type" content={metaData.default.type} />
+<meta property="title" content={metaData.default.title} />
+<meta property="description" content={metaData.default.description} />
+<meta property="image" content={metaData.default.image as string} />
+
+<!-- open graph ones -->
+<meta property="og:url" content={metaData.default.url} />
+<meta property="og:type" content={metaData.default.type} />
+<meta property="og:title" content={metaData.default.title} />
+<meta property="og:description" content={metaData.default.description} />
+<meta property="og:image" content={metaData.default.image as string} />
+
+<!-- twitter ones -->
+<meta name="twitter:card" content={metaData.twitter.card} />
+<meta name="twitter:title" content={metaData.twitter.title} />
+<meta name="twitter:description" content={metaData.twitter.description} />
+<meta name="twitter:image" content={metaData.twitter.image as string} />
+<meta property="twitter:domain" content={metaData.twitter.domain} />
+<meta property="twitter:url" content={metaData.twitter.url} />
